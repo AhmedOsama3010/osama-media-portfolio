@@ -78,7 +78,7 @@ export const content = {
     },
     items: [{
     id: 1,
-    title: { ar: "عنوان", en: "Title" },
+    title: { ar: "مروان بولة", en: "Title" },
     description: { ar: "وصف", en: "Description" },
     videoUrl: "https://www.youtube.com/embed/HYJoodnyCFc",
     category: "youtube",
