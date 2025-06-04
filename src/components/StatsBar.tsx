@@ -70,7 +70,7 @@ const StatBox = ({
       <p className={`text-3xl sm:text-4xl font-bold ${color}`}>
         <CountUp
           end={displayValue}
-          duration={5.5}
+          duration={8.5}
           decimals={showDecimal ? 1 : 0}
         />
         {suffix}
