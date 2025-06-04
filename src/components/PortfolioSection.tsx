@@ -17,8 +17,8 @@ const PortfolioSection = () => {
   // البيانات الثابتة للإحصائيات
   const statsData = {
     videos: content.portfolio.items.length, // أو رقم ثابت لو تحب
-    views: 1200000,
-    likes: 32000,
+    views: 57680,
+    likes: 2250,
   };
 
   return (
