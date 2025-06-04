@@ -9,18 +9,19 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   build: {
-    outDir: "dist",
-    rollupOptions: {
-      external: ['react-countup'],  // ← أضف هذا السطر
-    },
+    outDir: "dist"
+    // لاحظ: لا يوجد هنا rollupOptions.external
   },
   plugins: [
     react(),
-    mode === 'development' && componentTagger(),
+    mode === "development" && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  optimizeDeps: {
+    include: ["react-countup"],
   },
 }));
