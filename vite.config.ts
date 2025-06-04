@@ -9,15 +9,14 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   build: {
-    outDir: "dist", // مسار البناء
+    outDir: "dist",
     rollupOptions: {
-      external: ['react-countup'], // <-- أضف هنا المكتبة react-countup كـ external
+      external: ['react-countup'],  // ← أضف هذا السطر
     },
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
