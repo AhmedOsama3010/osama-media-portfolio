@@ -78,23 +78,24 @@ export const content = {
     },
     items: [{
     id: 1,
-    title: { ar: "مروان بولة", en: "Title" },
-    description: { ar: "وصف", en: "Description" },
-    videoUrl: "https://www.youtube.com/embed/HYJoodnyCFc",
+    title: { ar: "مين قال الموسيقي حرام؟", en: "Who said music is haram?" },
+    description: { ar: "مونتاج لتجربة شخصية بتحكي عن تأثير الموسيقى ونظرة الدين والعلم ليها", en: "A montage of a personal experience that talks about the impact of music and the views of religion and science on it." },
+    videoUrl: "https://www.youtube.com/embed/EdPQOtlDtXw",
     category: "youtube",
-    isNew: true // ← لازم دي تكون موجودة لو عايز العلامة تظهر
+    isNew: true // ← لازم دي تكون موجودة لو عايز العلامة تظهر 
   },
       {
         id: 2,
         title: {
-          en: "Product Advertisement"
+          ar: "لماذا انت لست سعيدا ؟",
+          en: "Why are you not happy?"
         },
         description: {
-          ar: "مونتاج إعلان احترافي لمنتج مع مؤثرات بصرية وتصحيح ألوان",
-          en: "Professional advertisement editing with visual effects and color correction"
+          ar: "مونتاج إلكتروني لفيديو توعوي عن إدمان الدوبامين الزائف وتأثيره على السلوك والصحة النفسية.",
+          en: "An electronic montage of an awareness video about fake dopamine addiction and its effects on behavior and mental health."
         },
-        category: "advertisements",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        category: "youtube",
+        videoUrl: "https://www.youtube.com/embed/AcFl7c1UHH0"
       },
       {
         id: 3,
@@ -125,15 +126,15 @@ export const content = {
       {
         id: 5,
         title: {
-          ar: "محتوى رحلات",
-          en: "Travel Content"
+          ar: "الرياضة ستغـيـر حيـاتـك | هكذا يـُصنع الأبطال 🔥",
+          en: "Sports will change your life | This is how champions are made 🔥"
         },
         description: {
-          ar: "مونتاج فيديو رحلات بتأثيرات سينمائية",
-          en: "Travel video editing with cinematic effects"
+          ar: "مونتاج وثائقي عن تطور الرياضة وفوايدها الجسدية والنفسية.",
+          en: "A documentary montage about the development of sports and its physical and psychological benefits."
         },
         category: "youtube",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        videoUrl: "https://www.youtube.com/embed/7D2c2t6dD5U"
       },
       {
         id: 6,
