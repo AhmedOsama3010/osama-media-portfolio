@@ -9,7 +9,10 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   build: {
-    outDir: "dist", // ← أضف دي
+    outDir: "dist", // مسار البناء
+    rollupOptions: {
+      external: ['react-countup'], // <-- أضف هنا المكتبة react-countup كـ external
+    },
   },
   plugins: [
     react(),
