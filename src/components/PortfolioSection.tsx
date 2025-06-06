@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-
-import { useState } from "react";
-import { StatsBar } from "../components/StatsBar";
-import { useLanguage } from '../contexts/LanguageContext';
-import { content } from '../constants/content.ts';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
-const PortfolioSection = () => {
-=======
 import { useEffect, useRef, useState } from "react";
 import { StatsBar } from "../components/StatsBar";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -40,19 +24,15 @@ interface PortfolioItem {
   };
 }
 
-
-
 const PortfolioSection = () => {
-  const [statsData, setStatsData] = useState({
-  videos: 0,
-  views: 0,
-  likes: 0,
-});
->>>>>>> d683e53 (تحديث مكون PortfolioSection مع بيانات مشاهدات يوتيوب)
   const { t, language } = useLanguage();
   const [activeCategory, setActiveCategory] = useState("youtube");
-const [portfolioItems, setPortfolioItems] = useState<PortfolioItem[]>(staticContent.portfolio.items);
-
+  const [portfolioItems, setPortfolioItems] = useState<PortfolioItem[]>(staticContent.portfolio.items);
+  const [statsData, setStatsData] = useState({
+    videos: 0,
+    views: 0,
+    likes: 0,
+  });
 
   const swiperRef = useRef<SwiperCore>();
   const iframePlayingRef = useRef(false);
@@ -61,14 +41,6 @@ const [portfolioItems, setPortfolioItems] = useState<PortfolioItem[]>(staticCont
     (item) => activeCategory === "all" || item.category === activeCategory
   );
 
-<<<<<<< HEAD
-  // البيانات الثابتة للإحصائيات
-  const statsData = {
-    videos: content.portfolio.items.length,
-    views: 57680,
-    likes: 2250,
-  };
-=======
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
       const data = event.data;
@@ -116,18 +88,17 @@ const [portfolioItems, setPortfolioItems] = useState<PortfolioItem[]>(staticCont
         };
       });
 
-    setStatsData({
-  videos: enrichedItems.length,
-  views: totalViews,
-  likes: totalLikes,
-});
+      setStatsData({
+        videos: enrichedItems.length,
+        views: totalViews,
+        likes: totalLikes,
+      });
 
       setPortfolioItems(enrichedItems);
     }
 
     fetchVideoStats();
   }, []);
->>>>>>> d683e53 (تحديث مكون PortfolioSection مع بيانات مشاهدات يوتيوب)
 
   return (
     <section id="portfolio" className="section-padding">
@@ -159,64 +130,6 @@ const [portfolioItems, setPortfolioItems] = useState<PortfolioItem[]>(staticCont
           })}
         </div>
 
-<<<<<<< HEAD
-        {/* Portfolio Carousel */}
-        <div className="relative">
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full"
-          >
-            <CarouselContent className="-ml-2 md:-ml-4">
-              {filteredItems.map((item) => (
-                <CarouselItem key={item.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow animate-fade-in h-full">
-                    <div className="relative">
-                      <div
-                        className={`relative ${
-                          item.category === "reels"
-                            ? "aspect-[9/16] mx-auto max-w-[280px]"
-                            : "aspect-video w-full"
-                        }`}
-                      >
-                        {item.isNew && (
-                          <div className="absolute top-0 right-0 overflow-hidden w-20 h-20 z-30">
-                            <div className="absolute transform rotate-45 bg-gradient-to-tr from-purple-600 via-pink-500 to-red-500 text-white text-[12px] font-bold py-1 w-[130%] text-center shadow-md right-[-35%] top-[15%]">
-                              {t("جديد 🔥", "NEW 🔥")}
-                            </div>
-                          </div>
-                        )}
-                        <iframe
-                          src={`${item.videoUrl}?rel=0`}
-                          title={t(item.title.ar, item.title.en)}
-                          className="w-full h-full rounded-xl shadow-md"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                        ></iframe>
-                      </div>
-                    </div>
-
-                    <div className="p-4">
-                      <h3 className="text-lg font-bold mb-2 text-gray-800 line-clamp-2">
-                        {t(item.title.ar, item.title.en)}
-                      </h3>
-                      <p className="text-gray-600 text-sm line-clamp-3">
-                        {t(item.description.ar, item.description.en)}
-                      </p>
-                    </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-4 bg-white/80 hover:bg-white border border-gray-200 shadow-lg" />
-            <CarouselNext className="hidden md:flex -right-4 bg-white/80 hover:bg-white border border-gray-200 shadow-lg" />
-          </Carousel>
-        </div>
-
-        {/* Mobile swipe hint */}
-=======
         <div className="relative group">
           <Swiper
             modules={[Navigation, Pagination]}
@@ -289,7 +202,6 @@ const [portfolioItems, setPortfolioItems] = useState<PortfolioItem[]>(staticCont
           </Swiper>
         </div>
 
->>>>>>> d683e53 (تحديث مكون PortfolioSection مع بيانات مشاهدات يوتيوب)
         <div className="text-center mt-4 md:hidden">
           <p className="text-sm text-gray-500">
             {t("اسحب للتنقل بين الفيديوهات", "Swipe to navigate videos")}
