@@ -1,4 +1,3 @@
-
 export const content = {
   hero: {
     title: {
