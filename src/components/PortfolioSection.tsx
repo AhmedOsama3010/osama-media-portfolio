@@ -60,7 +60,7 @@ const PortfolioSection = () => {
         </div>
 
         {/* Portfolio Carousel */}
-        <div className="relative px-12">
+        <div className="relative">
           <Carousel
             opts={{
               align: "start",
@@ -109,8 +109,8 @@ const PortfolioSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
+            <CarouselPrevious className="hidden md:flex -left-4 bg-white/80 hover:bg-white border border-gray-200 shadow-lg" />
+            <CarouselNext className="hidden md:flex -right-4 bg-white/80 hover:bg-white border border-gray-200 shadow-lg" />
           </Carousel>
         </div>
 
