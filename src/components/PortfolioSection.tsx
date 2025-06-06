@@ -1,13 +1,18 @@
+
 import { useState } from "react";
 import { StatsBar } from "../components/StatsBar";
-import { Video } from "lucide-react";
 import { useLanguage } from '../contexts/LanguageContext';
 import { content } from '../constants/content.ts';
-
-
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const PortfolioSection = () => {
-  const { t, language } = useLanguage(); // تأكد إن language موجود
+  const { t, language } = useLanguage();
   const [activeCategory, setActiveCategory] = useState("youtube");
 
   const filteredItems = content.portfolio.items.filter(
@@ -16,7 +21,7 @@ const PortfolioSection = () => {
 
   // البيانات الثابتة للإحصائيات
   const statsData = {
-    videos: content.portfolio.items.length, // أو رقم ثابت لو تحب
+    videos: content.portfolio.items.length,
     views: 57680,
     likes: 2250,
   };
@@ -54,49 +59,66 @@ const PortfolioSection = () => {
           })}
         </div>
 
-        {/* Portfolio Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredItems.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow animate-fade-in"
-            >
-              <div className="relative">
-                <div
-                  className={`relative ${
-                    item.category === "reels"
-                      ? "aspect-[9/16] mx-auto max-w-[280px]"
-                      : "aspect-video w-full"
-                  }`}
-                >
-                  {item.isNew && (
-                    <div className="absolute top-0 right-0 overflow-hidden w-20 h-20 z-30">
-                      <div className="absolute transform rotate-45 bg-gradient-to-tr from-purple-600 via-pink-500 to-red-500 text-white text-[12px] font-bold py-1 w-[130%] text-center shadow-md right-[-35%] top-[15%]">
-                        {t("جديد 🔥", "NEW 🔥")}
+        {/* Portfolio Carousel */}
+        <div className="relative px-12">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {filteredItems.map((item) => (
+                <CarouselItem key={item.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow animate-fade-in h-full">
+                    <div className="relative">
+                      <div
+                        className={`relative ${
+                          item.category === "reels"
+                            ? "aspect-[9/16] mx-auto max-w-[280px]"
+                            : "aspect-video w-full"
+                        }`}
+                      >
+                        {item.isNew && (
+                          <div className="absolute top-0 right-0 overflow-hidden w-20 h-20 z-30">
+                            <div className="absolute transform rotate-45 bg-gradient-to-tr from-purple-600 via-pink-500 to-red-500 text-white text-[12px] font-bold py-1 w-[130%] text-center shadow-md right-[-35%] top-[15%]">
+                              {t("جديد 🔥", "NEW 🔥")}
+                            </div>
+                          </div>
+                        )}
+                        <iframe
+                          src={`${item.videoUrl}?rel=0`}
+                          title={t(item.title.ar, item.title.en)}
+                          className="w-full h-full rounded-xl shadow-md"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        ></iframe>
                       </div>
                     </div>
-                  )}
-                     <iframe
-      src={`${item.videoUrl}?rel=0`}
-      title={t(item.title.ar, item.title.en)}
-      className="w-full h-full rounded-xl shadow-md"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-  </div>
-</div>
 
+                    <div className="p-4">
+                      <h3 className="text-lg font-bold mb-2 text-gray-800 line-clamp-2">
+                        {t(item.title.ar, item.title.en)}
+                      </h3>
+                      <p className="text-gray-600 text-sm line-clamp-3">
+                        {t(item.description.ar, item.description.en)}
+                      </p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
+        </div>
 
-              <div className="p-4">
-                <h3 className="text-lg font-bold mb-2 text-gray-800">
-                  {t(item.title.ar, item.title.en)}
-                </h3>
-                <p className="text-gray-600">
-                  {t(item.description.ar, item.description.en)}
-                </p>
-              </div>
-            </div>
-          ))}
+        {/* Mobile swipe hint */}
+        <div className="text-center mt-4 md:hidden">
+          <p className="text-sm text-gray-500">
+            {t("اسحب للتنقل بين الفيديوهات", "Swipe to navigate videos")}
+          </p>
         </div>
       </div>
     </section>
