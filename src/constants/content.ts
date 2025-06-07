@@ -151,24 +151,24 @@ export const content = {
       {
         id: 10,
         title: {
-          ar: "ريلز ترفيهي",
+          ar: "اعلان ل دوبي شات || doppy chat",
           en: "Entertainment Reel"
         },
         description: {
-          ar: "مونتاج ريلز قصير مع تأثيرات صوتية ومرئية جذابة",
-          en: "Short reel editing with attractive audio and visual effects"
+          ar: "مونتاج اعلان قصير باستايل كولاج يتضمن موشن جرافيكس",
+          en: ""
         },
         category: "advertisements",
         videoUrl: "https://player.vimeo.com/video/1091499839?h=0c8c05de75"
       }, {
         id: 8,
         title: {
-          ar: "ريلز ترفيهي",
+          ar: "اعلان ل دوبي شات || doppy chat",
           en: "Entertainment Reel"
         },
         description: {
-          ar: "مونتاج ريلز قصير مع تأثيرات صوتية ومرئية جذابة",
-          en: "Short reel editing with attractive audio and visual effects"
+          ar: "مونتاج اعلان قصير باستايل كولاج يتضمن موشن جرافيكس",
+          en: ""
         },
         category: "advertisements",
         videoUrl: "https://player.vimeo.com/video/1091499879?h=205bf13ad9"
@@ -184,7 +184,8 @@ export const content = {
           en: ""
         },
         category: "reels",
-        videoUrl: "https://player.vimeo.com/video/1091499608?h=efa47d2b27"
+        videoUrl: "https://player.vimeo.com/video/1091499608?h=efa47d2b27" ,
+        isNew: true 
       }, 
         {
         id: 10,
@@ -197,7 +198,8 @@ export const content = {
           en: ""
         },
         category: "reels",
-        videoUrl: "https://player.vimeo.com/video/1091500173?h=efa47d2b27"
+        videoUrl: "https://player.vimeo.com/video/1091500173?h=efa47d2b27" , 
+        isNew: true 
       }, {
         id: 11,
         title: {
