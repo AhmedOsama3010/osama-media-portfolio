@@ -86,45 +86,6 @@ export const content = {
       {
         id: 2,
         title: {
-          ar: "لماذا انت لست سعيدا ؟",
-          en: "Why are you not happy?"
-        },
-        description: {
-          ar: "مونتاج إلكتروني لفيديو توعوي عن إدمان الدوبامين الزائف وتأثيره على السلوك والصحة النفسية.",
-          en: "An electronic montage of an awareness video about fake dopamine addiction and its effects on behavior and mental health."
-        },
-        category: "youtube",
-        videoUrl: "https://www.youtube.com/embed/AcFl7c1UHH0"
-      },
-      {
-        id: 3,
-        title: {
-          ar: "ريلز ترفيهي",
-          en: "Entertainment Reel"
-        },
-        description: {
-          ar: "مونتاج ريلز قصير مع تأثيرات صوتية ومرئية جذابة",
-          en: "Short reel editing with attractive audio and visual effects"
-        },
-        category: "reels",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      },
-      {
-        id: 4,
-        title: {
-          ar: "فيديو تسويقي",
-          en: "Marketing Video"
-        },
-        description: {
-          ar: "مونتاج فيديو تسويقي احترافي لزيادة المبيعات",
-          en: "Professional marketing video editing to increase sales"
-        },
-        category: "advertisements",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      },
-      {
-        id: 5,
-        title: {
           ar: "الرياضة ستغـيـر حيـاتـك | هكذا يـُصنع الأبطال 🔥",
           en: "Sports will change your life | This is how champions are made 🔥"
         },
@@ -136,30 +97,69 @@ export const content = {
         videoUrl: "https://www.youtube.com/embed/7D2c2t6dD5U"
       },
       {
-        id: 6,
+        id: 3,
         title: {
-          ar: "ريلز موسيقي",
-          en: "Music Reel"
+          ar: "كيف يؤثر النوم على حياتك ؟",
+          en: "How does sleep affect your life?"
         },
         description: {
-          ar: "مونتاج ريلز موسيقي مع تزامن دقيق للصوت والصورة",
-          en: "Music reel editing with precise audio-visual synchronization"
+          ar:  "مونتاج إلكتروني يستعرض تأثير النوم على صحتك الجسدية والعقلية، وأضرار قلة النوم، وأهمية العادات الصحية للنوم من أجل حياة أفضل.",
+          en: "electronic-style montage exploring how sleep affects your physical and mental health, the dangers of sleep deprivation, and the importance of healthy sleep habits for a better life."
         },
-        category: "reels",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        category: "youtube",
+        videoUrl: "https://www.youtube.com/embed/jujHz3rwmJ0"
+      },
+      {
+        id: 4,
+        title: {
+          ar: "لماذا انت لست سعيدا ؟",
+          en: "Why are you not happy?"
+        },
+        description: {
+          ar: "مونتاج إلكتروني لفيديو توعوي عن إدمان الدوبامين الزائف وتأثيره على السلوك والصحة النفسية.",
+          en: "An electronic montage of an awareness video about fake dopamine addiction and its effects on behavior and mental health."
+        },
+        category: "youtube",
+        videoUrl: "https://www.youtube.com/embed/AcFl7c1UHH0"
+      },
+      {
+        id: 5,
+        title: {
+          ar: "توقف عن العمل من أجل المال | أجعل المال يعمل لديك!",
+          en: "Stop working for money | Make money work for you!"
+        },
+        description: {
+          ar: "ملخص لأهم أفكار الجزء الأول من كتاب الأب الغني والأب الفقير: الأثرياء لا يعملون من أجل المال، بل يجعلون المال يعمل من أجلهم.",
+          en: "Summary of the main ideas from part one of Rich Dad Poor Dad: the wealthy don’t work for money, they make money work for them."
+        },
+        category: "youtube",
+        videoUrl: "https://www.youtube.com/embed/_667Lg-6qiA"
+      },
+      {
+        id: 6,
+        title: {
+          ar: "كيف تبدأ عملك الخاص | هذا ما يفعله الأثرياء !",
+          en: "How to Start Your Own Business | This is What the Wealthy Do!"
+        },
+        description: {
+          ar: "مونتاج وثائقي يلخص أهم دروس كتاب الأب الغني والأب الفقير حول كيفية بدء مشروعك الخاص وبناء الثروة في 3 خطوات.",
+          en: "documentary-style montage summarizing the key lessons from 'Rich Dad Poor Dad' on how to start your own business and build wealth in 3 steps."
+        },
+        category: "youtube",
+        videoUrl: "https://www.youtube.com/embed/cOVA22NxBF0"
       },  {
         id: 7,
         title: {
-          ar: "ريلز موسيقي",
-          en: "Music Reel"
+          ar: "ريلز ترفيهي",
+          en: "Entertainment Reel"
         },
         description: {
-          ar: "مونتاج ريلز موسيقي مع تزامن دقيق للصوت والصورة",
-          en: "Music reel editing with precise audio-visual synchronization"
+          ar: "مونتاج ريلز قصير مع تأثيرات صوتية ومرئية جذابة",
+          en: "Short reel editing with attractive audio and visual effects"
         },
         category: "reels",
         videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      },  {
+      }, {
         id: 8,
         title: {
           ar: "ريلز موسيقي",
