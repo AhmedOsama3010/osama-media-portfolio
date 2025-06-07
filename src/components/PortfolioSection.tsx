@@ -156,7 +156,7 @@ const PortfolioSection = () => {
                   <div className="relative">
                     <div
                       className={`relative ${
-                        item.category === "reels"
+                        item.category === "reels" || item.category === "advertisements"
                           ? "aspect-[9/16] mx-auto max-w-[280px]"
                           : "aspect-video w-full"
                       }`}
@@ -168,13 +168,19 @@ const PortfolioSection = () => {
                           </div>
                         </div>
                       )}
-                      <iframe
-                        src={`${item.videoUrl}?rel=0&enablejsapi=1`}
-                        title={t(item.title.ar, item.title.en)}
-                        className="w-full h-full rounded-xl shadow-md"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
+                     <iframe
+  src={
+    item.videoUrl.includes("youtube")
+      ? `${item.videoUrl}?rel=0&enablejsapi=1`
+      : `${item.videoUrl}&title=0&byline=0&portrait=0`
+  }
+  title={t(item.title.ar, item.title.en)}
+  className="w-full h-full rounded-xl shadow-md"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+
                     </div>
                   </div>
 

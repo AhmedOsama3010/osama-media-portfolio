@@ -82,7 +82,7 @@ export const content = {
     videoUrl: "https://www.youtube.com/embed/EdPQOtlDtXw",
     category: "youtube",
     isNew: true // ← لازم دي تكون موجودة لو عايز العلامة تظهر 
-  },
+  },//========================{يوتيوب}=========================
       {
         id: 2,
         title: {
@@ -147,8 +147,9 @@ export const content = {
         },
         category: "youtube",
         videoUrl: "https://www.youtube.com/embed/cOVA22NxBF0"
-      },  {
-        id: 7,
+      },//========================{اعلانات}=========================
+      {
+        id: 10,
         title: {
           ar: "ريلز ترفيهي",
           en: "Entertainment Reel"
@@ -157,20 +158,58 @@ export const content = {
           ar: "مونتاج ريلز قصير مع تأثيرات صوتية ومرئية جذابة",
           en: "Short reel editing with attractive audio and visual effects"
         },
-        category: "reels",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        category: "advertisements",
+        videoUrl: "https://player.vimeo.com/video/1091499839?h=0c8c05de75"
       }, {
         id: 8,
         title: {
-          ar: "ريلز موسيقي",
-          en: "Music Reel"
+          ar: "ريلز ترفيهي",
+          en: "Entertainment Reel"
         },
         description: {
-          ar: "مونتاج ريلز موسيقي مع تزامن دقيق للصوت والصورة",
-          en: "Music reel editing with precise audio-visual synchronization"
+          ar: "مونتاج ريلز قصير مع تأثيرات صوتية ومرئية جذابة",
+          en: "Short reel editing with attractive audio and visual effects"
+        },
+        category: "advertisements",
+        videoUrl: "https://player.vimeo.com/video/1091499879?h=205bf13ad9"
+      },//========================{ريلز}========================= 
+      {
+        id: 9,
+        title: {
+          ar: "",
+          en: ""
+        },
+        description: {
+          ar: "مونتاج ريلز قصير مع تأثيرات صوتية ومرئية جذابة",
+          en: ""
         },
         category: "reels",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        videoUrl: "https://player.vimeo.com/video/1091499608?h=efa47d2b27"
+      }, 
+        {
+        id: 10,
+        title: {
+          ar: "",
+          en: ""
+        },
+        description: {
+          ar: "مونتاج ريلز مع ازالة الخلفية و مؤثرات بصرية",
+          en: ""
+        },
+        category: "reels",
+        videoUrl: "https://player.vimeo.com/video/1091500173?h=efa47d2b27"
+      }, {
+        id: 11,
+        title: {
+          ar: "",
+          en: ""
+        },
+        description: {
+          ar: "مونتاج ريلز مع ازالة الخلفية و مؤثرات بصرية",
+          en: ""
+        },
+        category: "reels",
+        videoUrl: "https://player.vimeo.com/video/1091500279?h=648143fda7"
       }
     ]
   },
