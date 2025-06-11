@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { content } from '../constants/content';
@@ -54,32 +53,45 @@ const BeforeAfterSection = () => {
                     transition={{ duration: 0.4, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
-                      <div className="space-y-2">
-                        <div className="aspect-video w-full">
+                    <div className="w-full mt-2">
+                      {example.beforeVideo && example.afterVideo ? (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto">
+                          <div>
+                            <div className="aspect-video mx-auto max-w-[700px] w-full">
+                              <iframe
+                                src={example.beforeVideo}
+                                title={t('التايم لاين', 'Before')}
+                                className="w-full h-full rounded-lg"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                              ></iframe>
+                            </div>
+                            <p className="text-center font-medium">{t('قبل', 'Before')}</p>
+                          </div>
+                          <div>
+                            <div className="aspect-video mx-auto max-w-[700px] w-full">
+                              <iframe
+                                src={example.afterVideo}
+                                title={t('بعد', 'After')}
+                                className="w-full h-full rounded-lg"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                              ></iframe>
+                            </div>
+                            <p className="text-center font-medium">{t('بعد', 'After')}</p>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="aspect-video mx-auto max-w-[700px] w-full">
                           <iframe
-                            src={example.beforeVideo}
-                            title={`Before: ${t(example.title.ar, example.title.en)}`}
+                            src={example.video}
+                            title={t(example.title.ar, example.title.en)}
                             className="w-full h-full rounded-lg"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                           ></iframe>
                         </div>
-                        <p className="text-center font-medium">{t('قبل', 'Before')}</p>
-                      </div>
-
-                      <div className="space-y-2">
-                        <div className="aspect-video w-full">
-                          <iframe
-                            src={example.afterVideo}
-                            title={`After: ${t(example.title.ar, example.title.en)}`}
-                            className="w-full h-full rounded-lg"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          ></iframe>
-                        </div>
-                        <p className="text-center font-medium">{t('بعد', 'After')}</p>
-                      </div>
+                      )}
                     </div>
                   </motion.div>
                 )}
@@ -111,7 +123,7 @@ const BeforeAfterSection = () => {
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                   className="overflow-hidden"
                 >
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2 max-w-2xl mx-auto">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2 max-w-4xl mx-auto">
                     <div className="space-y-2">
                       <div className="aspect-[9/16] mx-auto max-w-[250px]">
                         <iframe
