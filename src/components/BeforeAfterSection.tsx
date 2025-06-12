@@ -57,10 +57,10 @@ const BeforeAfterSection = () => {
                       {example.beforeVideo && example.afterVideo ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto">
                           <div>
-                            <div className="aspect-video mx-auto max-w-[700px] w-full">
+                            <div className={`${example.isReel ? 'aspect-[9/16] max-w-[300px]' : 'aspect-video max-w-[700px]'} mx-auto w-full flex items-center justify-center`}>
                               <iframe
                                 src={example.beforeVideo}
-                                title={t('التايم لاين', 'Before')}
+                                title={t('قبل', 'Before')}
                                 className="w-full h-full rounded-lg"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
@@ -69,10 +69,10 @@ const BeforeAfterSection = () => {
                             <p className="text-center font-medium">{t('قبل', 'Before')}</p>
                           </div>
                           <div>
-                            <div className="aspect-video mx-auto max-w-[700px] w-full">
+                            <div className={`${example.isReel ? 'aspect-[9/16] max-w-[300px]' : 'aspect-video max-w-[700px]'} mx-auto w-full flex items-center justify-center`}>
                               <iframe
-                                src={example.afterVideo}
-                                title={t('بعد', 'After')}
+                                src={example.afterVideo || example.video}
+                                title={t(example.title.ar, example.title.en)}
                                 className="w-full h-full rounded-lg"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
@@ -82,9 +82,9 @@ const BeforeAfterSection = () => {
                           </div>
                         </div>
                       ) : (
-                        <div className="aspect-video mx-auto max-w-[700px] w-full">
+                        <div className={`${example.isReel ? 'aspect-[9/16] max-w-[300px]' : 'aspect-video max-w-[700px]'} mx-auto w-full flex items-center justify-center`}>
                           <iframe
-                            src={example.video}
+                            src={example.afterVideo || example.video}
                             title={t(example.title.ar, example.title.en)}
                             className="w-full h-full rounded-lg"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -98,62 +98,6 @@ const BeforeAfterSection = () => {
               </AnimatePresence>
             </div>
           ))}
-
-          {/* Reels Editing Section */}
-          <div className="border border-gray-200 rounded-lg p-4 bg-white shadow-sm">
-            <button
-              onClick={() => toggleSection("reels")}
-              className="w-full flex items-center justify-between text-left font-bold text-brand-purple text-xl mb-4"
-            >
-              <span>{t('مونتاج الريلز', 'Reels Editing')}</span>
-              <ChevronDown
-                className={`transition-transform duration-300 ${
-                  openSections["reels"] ? "rotate-180" : ""
-                }`}
-              />
-            </button>
-
-            <AnimatePresence initial={false}>
-              {openSections["reels"] && (
-                <motion.div
-                  key="reels-content"
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.4, ease: "easeInOut" }}
-                  className="overflow-hidden"
-                >
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2 max-w-4xl mx-auto">
-                    <div className="space-y-2">
-                      <div className="aspect-[9/16] mx-auto max-w-[250px]">
-                        <iframe
-                          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                          title={`Before: ${t('مونتاج الريلز', 'Reels Editing')}`}
-                          className="w-full h-full rounded-lg"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                        ></iframe>
-                      </div>
-                      <p className="text-center font-medium">{t('قبل', 'Before')}</p>
-                    </div>
-
-                    <div className="space-y-2">
-                      <div className="aspect-[9/16] mx-auto max-w-[250px]">
-                        <iframe
-                          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                          title={`After: ${t('مونتاج الريلز', 'Reels Editing')}`}
-                          className="w-full h-full rounded-lg"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                        ></iframe>
-                      </div>
-                      <p className="text-center font-medium">{t('بعد', 'After')}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
         </div>
       </div>
     </section>

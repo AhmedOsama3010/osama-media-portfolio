@@ -226,22 +226,25 @@ export const content = {
       en: "See the impact of editing on video quality"
     },
     examples: [
+      
+      // {
+      //   id: 1,
+      //   title: { ar: "تصحيح الالوان", en: "Color Correction" },
+      //   video: "https://player.vimeo.com/video/xxx3"
+      // },
       {
-        id: 1,
+        id: 2,
         title: { ar: "النتيجة vs التايم لاين", en: "Final vs Timeline" },
         beforeVideo: "https://player.vimeo.com/video/1092511842?h=",
         afterVideo: "https://player.vimeo.com/video/1092207823?h="
       },
       {
-        id: 2,
-        title: { ar: "تحسين الصوت", en: "Audio Enhancement" },
-        video: "https://player.vimeo.com/video/xxx3"
-      },
-      {
-        id: 3,
-        title: { ar: "إزالة الضوضاء", en: "Noise Removal" },
-        video: "https://player.vimeo.com/video/xxx4"
-      }
+         id: 3,
+         title: { ar: "مونتاج الريلز", en: "Reels Editing" },
+        
+         video: "https://player.vimeo.com/video/1092813399?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+         isReel: true
+       }
     ]
   },
   testimonials: {
