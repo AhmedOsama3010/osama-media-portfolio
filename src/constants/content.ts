@@ -5,7 +5,7 @@ export const content = {
       en: "Ahmed Osama"
     },
     subtitle: {
-      ar: "مونتير فيديو محترف",
+      ar: "مونتير فيديو",
       en: "Professional Video Editor"
     },
     description: {
@@ -174,20 +174,20 @@ export const content = {
         videoUrl: "https://player.vimeo.com/video/1091499879?h=205bf13ad9"
       },
       //========================{ريلز}========================= 
-      {
+       {
         id: 9,
         title: {
           ar: "",
           en: ""
         },
         description: {
-          ar: "مونتاج ريلز قصير مع تأثيرات صوتية ومرئية جذابة",
+          ar: "مونتاج ريلز مع تعديل الصوت و مؤثرات بصرية",
           en: ""
         },
         category: "reels",
-        videoUrl: "https://player.vimeo.com/video/1091499608?h=efa47d2b27" ,
-        isNew: true 
-      }, 
+        videoUrl: "https://player.vimeo.com/video/1095590253?h"
+        ,isNew: true 
+      },
         {
         id: 10,
         title: {
@@ -199,8 +199,8 @@ export const content = {
           en: ""
         },
         category: "reels",
-        videoUrl: "https://player.vimeo.com/video/1091500173?h=efa47d2b27" , 
-        isNew: true 
+        videoUrl: "https://player.vimeo.com/video/1091499608?h=efa47d2b27" 
+        
       }, {
         id: 11,
         title: {
@@ -213,7 +213,19 @@ export const content = {
         },
         category: "reels",
         videoUrl: "https://player.vimeo.com/video/1091500279?h=648143fda7"
-      }
+      }, {
+        id: 12,
+        title: {
+          ar: "",
+          en: ""
+        },
+        description: {
+          ar: "مونتاج ريلز قصير مع تأثيرات صوتية ومرئية جذابة",
+          en: ""
+        },
+        category: "reels",
+        videoUrl:  "https://player.vimeo.com/video/1091500173?h=efa47d2b27"
+      },
     ]
   },
   beforeAfter: {
