@@ -6,7 +6,7 @@ export const content = {
     },
     subtitle: {
       ar: "مونتير فيديو",
-      en: "Professional Video Editor"
+      en: "Video Editor"
     },
     description: {
       ar: "أقدم خدمات مونتاج فيديو احترافية لمنصات السوشيال ميديا, اليوتيوب، إعلانات السوشيال، والريلز",
@@ -174,8 +174,21 @@ export const content = {
         videoUrl: "https://player.vimeo.com/video/1091499879?h=205bf13ad9"
       },
       //========================{ريلز}========================= 
-       {
+      {
         id: 9,
+        title: {
+          ar: "",
+          en: ""
+        },
+        description: {
+          ar: "مونتاج ريلز قصير مع تأثيرات صوتية ومرئية جذابة",
+          en: ""
+        },
+        category: "reels",
+        videoUrl:  "https://player.vimeo.com/video/1096273299?h=efa47d2b27"
+      },
+       {
+        id: 10,
         title: {
           ar: "",
           en: ""
@@ -189,7 +202,7 @@ export const content = {
         ,isNew: true 
       },
         {
-        id: 10,
+        id: 11,
         title: {
           ar: "",
           en: ""
@@ -202,7 +215,7 @@ export const content = {
         videoUrl: "https://player.vimeo.com/video/1091499608?h=efa47d2b27" 
         
       }, {
-        id: 11,
+        id: 12,
         title: {
           ar: "",
           en: ""
@@ -214,7 +227,7 @@ export const content = {
         category: "reels",
         videoUrl: "https://player.vimeo.com/video/1091500279?h=648143fda7"
       }, {
-        id: 12,
+        id: 13,
         title: {
           ar: "",
           en: ""
