@@ -75,16 +75,31 @@ export const content = {
       ar: ["الكل", "يوتيوب", "إعلانات", "ريلز"],
       en: ["All", "YouTube", "Advertisements", "Reels"]
     },
-    items: [{
-    id: 1,
+    items: [//========================{يوتيوب}=========================
+      {
+        id: 1,
+        title: {
+          ar: "أقوي شات بوت مجاني ✔💬",
+          en: "أقوي شات بوت مجاني ✔💬"
+        },
+        description: {
+          ar: "مونتاج ب استايل الكتروني للمحتوي تكنولوجي .",
+          en: "مونتاج ب استايل الكتروني للمحتوي تكنولوجي ."
+        },
+        category: "youtube",
+        videoUrl: "https://www.youtube.com/embed/JC17hZ1yYHc",
+        isNew: true
+      },
+      {
+    id: 2,
     title: { ar: "مين قال الموسيقي حرام؟", en: "Who said music is haram?" },
     description: { ar: "مونتاج لتجربة شخصية بتحكي عن تأثير الموسيقى ونظرة الدين والعلم ليها", en: "A montage of a personal experience that talks about the impact of music and the views of religion and science on it." },
     videoUrl: "https://www.youtube.com/embed/EdPQOtlDtXw",
     category: "youtube",
     isNew: true // ← لازم دي تكون موجودة لو عايز العلامة تظهر 
-  },//========================{يوتيوب}=========================
-      {
-        id: 2,
+  }
+  ,{
+        id: 3,
         title: {
           ar: "الرياضة ستغـيـر حيـاتـك | هكذا يـُصنع الأبطال 🔥",
           en: "Sports will change your life | This is how champions are made 🔥"
@@ -97,7 +112,7 @@ export const content = {
         videoUrl: "https://www.youtube.com/embed/7D2c2t6dD5U"
       },
       {
-        id: 3,
+        id: 4,
         title: {
           ar: "كيف يؤثر النوم على حياتك ؟",
           en: "How does sleep affect your life?"
@@ -110,7 +125,7 @@ export const content = {
         videoUrl: "https://www.youtube.com/embed/jujHz3rwmJ0"
       },
       {
-        id: 4,
+        id: 5,
         title: {
           ar: "لماذا انت لست سعيدا ؟",
           en: "Why are you not happy?"
@@ -123,7 +138,7 @@ export const content = {
         videoUrl: "https://www.youtube.com/embed/AcFl7c1UHH0"
       },
       {
-        id: 5,
+        id: 6,
         title: {
           ar: "توقف عن العمل من أجل المال | أجعل المال يعمل لديك!",
           en: "Stop working for money | Make money work for you!"
@@ -136,7 +151,7 @@ export const content = {
         videoUrl: "https://www.youtube.com/embed/_667Lg-6qiA"
       },
       {
-        id: 6,
+        id: 7,
         title: {
           ar: "كيف تبدأ عملك الخاص | هذا ما يفعله الأثرياء !",
           en: "How to Start Your Own Business | This is What the Wealthy Do!"
