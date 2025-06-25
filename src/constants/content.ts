@@ -185,7 +185,8 @@ export const content = {
           en: ""
         },
         category: "reels",
-        videoUrl:  "https://player.vimeo.com/video/1096273299?h=efa47d2b27"
+        videoUrl:  "https://player.vimeo.com/video/1096273299?h=efa47d2b27",
+        isNew: true 
       },
        {
         id: 10,
@@ -199,7 +200,7 @@ export const content = {
         },
         category: "reels",
         videoUrl: "https://player.vimeo.com/video/1095590253?h"
-        ,isNew: true 
+        
       },
         {
         id: 11,
