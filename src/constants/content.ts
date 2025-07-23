@@ -76,7 +76,21 @@ export const content = {
       en: ["All", "YouTube", "Advertisements", "Reels"]
     },
     items: [//========================{يوتيوب}=========================
-      {
+       {
+        id: 1,
+        title: {
+          ar: "أقوي شات بوت مجاني ✔💬",
+          en: "أقوي شات بوت مجاني ✔💬"
+        },
+        description: {
+          ar: "مونتاج ب استايل الكتروني للمحتوي تكنولوجي .",
+          en: "مونتاج ب استايل الكتروني للمحتوي تكنولوجي ."
+        },
+        category: "youtube",
+        videoUrl: "https://www.youtube.com/embed/JC17hZ1yYHc",
+        isNew: true
+      },
+     {
         id: 1,
         title: {
           ar: "أقوي شات بوت مجاني ✔💬",
