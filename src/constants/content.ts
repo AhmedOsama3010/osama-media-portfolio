@@ -93,15 +93,15 @@ export const content = {
      {
         id: 1,
         title: {
-          ar: "أقوي شات بوت مجاني ✔💬",
-          en: "أقوي شات بوت مجاني ✔💬"
+          ar: "تكلمت مع النار ولاكنها حرقتني",
+          en: "تكلمت مع النار ولاكنها حرقتني"
         },
         description: {
-          ar: "مونتاج ب استايل الكتروني للمحتوي تكنولوجي .",
-          en: "مونتاج ب استايل الكتروني للمحتوي تكنولوجي ."
+          ar: " مونتاج مبني علي الذكاء الاصطناعي .",
+          en: " مونتاج مبني علي الذكاء الاصطناعي .",
         },
         category: "youtube",
-        videoUrl: "https://www.youtube.com/embed/JC17hZ1yYHc",
+        videoUrl: "https://www.youtube.com/embed/1IFL33JUt5I",
         isNew: true
       },
       {
@@ -109,8 +109,8 @@ export const content = {
     title: { ar: "مين قال الموسيقي حرام؟", en: "Who said music is haram?" },
     description: { ar: "مونتاج لتجربة شخصية بتحكي عن تأثير الموسيقى ونظرة الدين والعلم ليها", en: "A montage of a personal experience that talks about the impact of music and the views of religion and science on it." },
     videoUrl: "https://www.youtube.com/embed/EdPQOtlDtXw",
-    category: "youtube",
-    isNew: true // ← لازم دي تكون موجودة لو عايز العلامة تظهر 
+    category: "youtube"
+   // ← لازم دي تكون موجودة لو عايز العلامة تظهر 
   }
   ,{
         id: 3,
