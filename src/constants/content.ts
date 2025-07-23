@@ -217,7 +217,21 @@ export const content = {
         videoUrl: "https://player.vimeo.com/video/1091499879?h=205bf13ad9"
       },
       //========================{ريلز}========================= 
-      {
+    {
+        id: 9,
+        title: {
+          ar: "",
+          en: ""
+        },
+        description: {
+          ar: "مونتاج ريلز قصير مع تأثيرات صوتية ومرئية جذابة",
+          en: ""
+        },
+        category: "reels",
+        videoUrl:  "https://www.youtube.com/embed/ymGiRXskn2o",
+        isNew: true 
+      },
+    {
         id: 9,
         title: {
           ar: "",
