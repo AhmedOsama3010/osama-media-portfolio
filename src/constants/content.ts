@@ -76,22 +76,22 @@ export const content = {
       en: ["All", "YouTube", "Advertisements", "Reels"]
     },
     items: [//========================{يوتيوب}=========================
-       {
+     {
         id: 1,
         title: {
-          ar: "أقوي شات بوت مجاني ✔💬",
-          en: "أقوي شات بوت مجاني ✔💬"
+          ar: "هل نابليون صار مسلم بعد غزو مصر ؟",
+          en: "هل نابليون صار مسلم بعد غزو مصر ؟"
         },
         description: {
           ar: "مونتاج ب استايل الكتروني للمحتوي تكنولوجي .",
           en: "مونتاج ب استايل الكتروني للمحتوي تكنولوجي ."
         },
         category: "youtube",
-        videoUrl: "https://www.youtube.com/embed/JC17hZ1yYHc",
+        videoUrl: "https://www.youtube.com/embed/r1On_jERMI0",
         isNew: true
-      },
+     },
      {
-        id: 1,
+        id: 2,
         title: {
           ar: "تكلمت مع النار ولاكنها حرقتني",
           en: "تكلمت مع النار ولاكنها حرقتني"
@@ -105,7 +105,21 @@ export const content = {
         isNew: true
       },
       {
-    id: 2,
+        id: 3,
+        title: {
+          ar: "أقوي شات بوت مجاني ✔💬",
+          en: "أقوي شات بوت مجاني ✔💬"
+        },
+        description: {
+          ar: "مونتاج ب استايل الكتروني للمحتوي تكنولوجي .",
+          en: "مونتاج ب استايل الكتروني للمحتوي تكنولوجي ."
+        },
+        category: "youtube",
+        videoUrl: "https://www.youtube.com/embed/JC17hZ1yYHc",
+        isNew: true
+      },
+      {
+    id: 4,
     title: { ar: "مين قال الموسيقي حرام؟", en: "Who said music is haram?" },
     description: { ar: "مونتاج لتجربة شخصية بتحكي عن تأثير الموسيقى ونظرة الدين والعلم ليها", en: "A montage of a personal experience that talks about the impact of music and the views of religion and science on it." },
     videoUrl: "https://www.youtube.com/embed/EdPQOtlDtXw",
@@ -113,7 +127,7 @@ export const content = {
    // ← لازم دي تكون موجودة لو عايز العلامة تظهر 
   }
   ,{
-        id: 3,
+        id: 5,
         title: {
           ar: "الرياضة ستغـيـر حيـاتـك | هكذا يـُصنع الأبطال 🔥",
           en: "Sports will change your life | This is how champions are made 🔥"
@@ -126,7 +140,7 @@ export const content = {
         videoUrl: "https://www.youtube.com/embed/7D2c2t6dD5U"
       },
       {
-        id: 4,
+        id: 6,
         title: {
           ar: "كيف يؤثر النوم على حياتك ؟",
           en: "How does sleep affect your life?"
@@ -139,7 +153,7 @@ export const content = {
         videoUrl: "https://www.youtube.com/embed/jujHz3rwmJ0"
       },
       {
-        id: 5,
+        id: 7,
         title: {
           ar: "لماذا انت لست سعيدا ؟",
           en: "Why are you not happy?"
@@ -152,7 +166,7 @@ export const content = {
         videoUrl: "https://www.youtube.com/embed/AcFl7c1UHH0"
       },
       {
-        id: 6,
+        id: 8,
         title: {
           ar: "توقف عن العمل من أجل المال | أجعل المال يعمل لديك!",
           en: "Stop working for money | Make money work for you!"
@@ -165,7 +179,7 @@ export const content = {
         videoUrl: "https://www.youtube.com/embed/_667Lg-6qiA"
       },
       {
-        id: 7,
+        id: 9,
         title: {
           ar: "كيف تبدأ عملك الخاص | هذا ما يفعله الأثرياء !",
           en: "How to Start Your Own Business | This is What the Wealthy Do!"
@@ -190,7 +204,7 @@ export const content = {
         category: "advertisements",
         videoUrl: "https://player.vimeo.com/video/1091499839?h=0c8c05de75"
       }, {
-        id: 8,
+        id: 11,
         title: {
           ar: "اعلان ل دوبي شات || doppy chat",
           en: "Entertainment Reel"
