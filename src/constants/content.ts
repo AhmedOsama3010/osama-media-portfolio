@@ -257,7 +257,7 @@ export const content = {
         },
         category: "reels",
         videoUrl:  "https://www.youtube.com/embed/ymGiRXskn2o",
-        isNew: true 
+        
       },
     {
         id: 9,
@@ -271,7 +271,7 @@ export const content = {
         },
         category: "reels",
         videoUrl:  "https://player.vimeo.com/video/1096273299?h=efa47d2b27",
-        isNew: true 
+        
       },
        {
         id: 10,
