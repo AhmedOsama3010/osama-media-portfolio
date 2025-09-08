@@ -242,7 +242,7 @@ export const content = {
           en: ""
         },
         category: "reels",
-        videoUrl:  "https://player.vimeo.com/video/1116830268?share=copy",
+        videoUrl:  "https://player.vimeo.com/video/1116829906",
         isNew: true 
       },
     {
