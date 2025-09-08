@@ -228,7 +228,7 @@ export const content = {
           en: ""
         },
         category: "reels",
-        videoUrl:  "https://player.vimeo.com/video/1116830268?ts",
+        videoUrl:  "https://player.vimeo.com/video/1116830268?share=copy",
         isNew: true 
       },
 {
