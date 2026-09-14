@@ -1,0 +1,6 @@
+name = "osama-media-portfolio"
+compatibility_date = "2026-09-14"
+
+[assets]
+directory = "./dist"
+not_found_handling = "single-page-application"
